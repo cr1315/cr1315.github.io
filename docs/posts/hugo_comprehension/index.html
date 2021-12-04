@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>对Hugo的理解</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+
+
+<meta property="og:title" content="对Hugo的理解" />
+<meta property="og:description" content="hugo页面组成的重要元素 content 首先，自己的内容都要放在content folder底下，content底下的第一层作为type/section使用，一般是一个folder。
+ 这个folder里如果有index.md，则这是一个leaf bundle，也就是一个单一的页面。然后这个folder里可以放各种资源（resource），包括images，pdfs等等都可以，是这个leaf page独有的资源。  leaf bundle里不能再放leaf bundle   如果这个folder里有_index.md，则这是一个branch bundle，简单理解就是存放多个页面的文件夹。  这个folder里可以放leaf bundle，也可以放branch bundle。嘛，扩展了的文件与文件夹的概念。    layout 这个folder里放该怎么渲染页面，根据content的type/section来按照一定的优先级确定一个layout，按照其中的template把content里的markdown渲染成一个html页面。
+这可能是熟悉一些hugo之后第一个customize的东西吧，简单来说，控制了这两个folder的东西，至少就控制了页面的内容和展示这两个部分。至少我就算是在做网页了？
+archetypes layout控制多了就会总结出一些经验，同一个type/section的页面总会有相似的结构，这就叫archetype。在这里定义一些自己用得顺手的archetype算是用熟了hugo之后的第一个进阶吧？
+template hugo用得越来越熟练，开始自定义更细致的东西了。
+不是单纯得去修改一个页面的模版，而是把页面上的内容模块化，就制作一个个小的template，目前还处于第一阶段，臆测是不是可以理解成React里的component呢，算是进阶级了吧。
+config 就目前能看到的东西来讲，这个可能是最深的了吧。
+真正开始配置hugo的运行，理解hugo内部的动作，让hugo按我想的方式运作。配合上述各种元素，真正做到如臂使指。
+嘛，到这个阶段再更新这篇文章吧。那时候应该能看到更多东西。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cr1315.github.io/posts/hugo_comprehension/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-03T00:37:05+09:00" />
+<meta property="article:modified_time" content="2021-12-03T00:37:05+09:00" />
+
+
+
+    
+    
+<meta name="description" content="对Hugo的理解" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      Ray&#39;s Blog</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://cr1315.github.io/images/default-hero.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/default-avatar_hu9bf48a08e17db6472c2e32b73058a6bb_47653_120x120_fit_box_3.png' alt="Author Image">
+          <h5 class="author-name">Taihang Lei</h5>
+          <p>December 3, 2021</p>
+        </div>
+
+        <div class="title">
+          <h1>对Hugo的理解</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          <h1 id="hugo页面组成的重要元素">hugo页面组成的重要元素</h1>
+<h2 id="content">content</h2>
+<p>首先，自己的内容都要放在content folder底下，content底下的第一层作为type/section使用，一般是一个folder。</p>
+<ul>
+<li>这个folder里如果有index.md，则这是一个leaf bundle，也就是一个单一的页面。然后这个folder里可以放各种资源（resource），包括images，pdfs等等都可以，是这个leaf page独有的资源。
+<ul>
+<li>leaf bundle里不能再放leaf bundle</li>
+</ul>
+</li>
+<li>如果这个folder里有_index.md，则这是一个branch bundle，简单理解就是存放多个页面的文件夹。
+<ul>
+<li>这个folder里可以放leaf bundle，也可以放branch bundle。嘛，扩展了的文件与文件夹的概念。</li>
+</ul>
+</li>
+</ul>
+<h2 id="layout">layout</h2>
+<p>这个folder里放该怎么渲染页面，根据content的type/section来按照一定的优先级确定一个layout，按照其中的template把content里的markdown渲染成一个html页面。<br>
+这可能是熟悉一些hugo之后第一个customize的东西吧，简单来说，控制了这两个folder的东西，至少就控制了页面的内容和展示这两个部分。至少我就算是在做网页了？</p>
+<h2 id="archetypes">archetypes</h2>
+<p>layout控制多了就会总结出一些经验，同一个type/section的页面总会有相似的结构，这就叫archetype。在这里定义一些自己用得顺手的archetype算是用熟了hugo之后的第一个进阶吧？</p>
+<h2 id="template">template</h2>
+<p>hugo用得越来越熟练，开始自定义更细致的东西了。<br>
+不是单纯得去修改一个页面的模版，而是把页面上的内容模块化，就制作一个个小的template，目前还处于第一阶段，臆测是不是可以理解成React里的component呢，算是进阶级了吧。</p>
+<h2 id="config">config</h2>
+<p>就目前能看到的东西来讲，这个可能是最深的了吧。<br>
+真正开始配置hugo的运行，理解hugo内部的动作，让hugo按我想的方式运作。配合上述各种元素，真正做到如臂使指。<br>
+嘛，到这个阶段再更新这篇文章吧。那时候应该能看到更多东西。</p>
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/cr1315/cr1315.github.io/edit/main/content/posts/hugo_comprehension.md" title="Improve this page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row next-prev-navigator">
+  
+  
+</div>
+
+      <hr />
+      
+      
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#content">content</a></li>
+    <li><a href="#layout">layout</a></li>
+    <li><a href="#archetypes">archetypes</a></li>
+    <li><a href="#template">template</a></li>
+    <li><a href="#config">config</a></li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+            <li><span>Email: </span> <span>584664105@qq.com</span></li>
+            
+            <li><span>Phone: </span> <span>&#43;080-4522-4744</span></li>
+            
+          </ul>
+        </div>
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='https://cr1315.github.ioindex.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2021 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>

@@ -6,7 +6,7 @@
     <description>Recent content on Ray&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jun 2010 08:06:25 +0600</lastBuildDate><atom:link href="https://cr1315.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cr1315.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resultados de Búsqueda</title>
       <link>https://cr1315.github.io/search/</link>
@@ -330,6 +330,54 @@ No content shown here is rendered, all content is based in the template layouts/
 Setting a very low sitemap priority will tell search engines this is not important content.
 This implementation uses Fusejs, jquery and mark.js
 Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
+    
+    <item>
+      <title>ペア電注意点</title>
+      <link>https://cr1315.github.io/nanpa/%E7%B7%8F%E9%9B%86%E7%B7%A8/</link>
+      <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cr1315.github.io/nanpa/%E7%B7%8F%E9%9B%86%E7%B7%A8/</guid>
+      <description>会話中全般的に  被ったら絶対譲ってあげる 女の子のテンションに合わせる 相手を見てあげて、理解してあげる、ができたからこそ、違和感を感じれるようになる  その違和感に従い、どんどん壁をぶっち壊し(すり抜けるのもあり？)、心の近くに寄り添って、感情をゆさぶる ゴールとしては、心身とも深いところまで行き、忘れられない自分の痕跡を刻んでおく   ちょっとピリつくような空気だけど、何でも見透かしてくるし、何でも理解してしまって、追いかけたら去ってしまうようなあの人みたいな絶妙なニューアンス　  入りの時に  ユーモアを入れて入れ  感情を揺さぶる  他の会話は難しいから、兎に角恋愛トークを中心に話題展開  他に何があるのか    </description>
+    </item>
+    
+    <item>
+      <title>增肌</title>
+      <link>https://cr1315.github.io/posts/muscle_growth/</link>
+      <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cr1315.github.io/posts/muscle_growth/</guid>
+      <description>看知乎文章，然后把自己的理解输出（不输出就不能深入理解，没有收获）
+ 前言 肌肉肥大就是我们通常所说的增肌，增的是骨骼肌，另外还有平滑肌和心肌
+骨骼肌是由成千上万条肌纤维组成的，肌肉的收缩就是靠肌纤维的滑动实现的。
+每条肌纤维又是由肌原纤维组成的。 增肌有肌质肥大和肌原纤维肥大两种， 肌原纤维肥大指肌肉内所有收缩性元素体积的增加，比如肌蛋白，肌纤维等。 肌质肥大指肌细胞外基质的膨胀，也就是非收缩性元素的膨胀，比如肌肉内的水分，粮原，矿物质等。 ￼ 插入图片
+知识 肌肉肥大的基础原理：压力-恢复-适应。
+增肌的基本法则：训练+饮食+休息
+训练 训练最最最重要的三个因素：训练动作，训练量，渐进超负荷
+ 比较玄学：感受肌肉的收缩，我们是练肌肉，不是练力量
+  训练动作又分为多关节和单关节两类。  保证动作规范的基础上，寻找最适合的角度即可。不用太在乎动作的完美和优美。   训练量=训练组数*训练次数*使用重量（使用重量新手可以不考虑）  训练重量=最大负重*65%，比较合适 8-12次力竭比较合理  组组力竭其实挺危险的。   组间休息45～90秒 训练后的两天里会长肌肉，第三天开始就完全恢复了。可以继续训练了。（新手可以先每周练3天） 每1～1.5个月一次冲击新重量。6周一个周期挺好的。   渐进超负荷就是说想要持续增肌，必须得慢慢增加训练量  提升的是总容量，可以自己调节。老话说的好，大重量带来大肌肉，但是重量是有上限的，那该怎么办，调整重量与总次数的乘积。 如果这次增加次数，下次可以增加组数。    营养/饮食（蛋白质，总摄入量和碳水化合物） 训练的时候基本正在创作肌肉，破坏肌纤维;接着通过足够的营养补充和休息，肌纤维才能被修补，肌肉才能恢复原状，甚至超过原状（增肌）
+ 蛋白质：结论来说，每天确保摄入1.6～2.2g/kg的蛋白质 总摄入量：想要最大化增肌，一定要在一个卡路里盛宇的状态下。吃的比消耗的多。 碳水化合物：增肌训练非常依赖于粮原（一种身体的能量储备）；碳水化合物会刺激胰岛素的分泌，而胰岛素的分泌会帮助减慢蛋白质分解率，从而间接地帮助增肌。  休息。睡眠和休息天。 睡眠可以提高减肥和增肌的效果。建议每天睡8小时。
+ 休息天：通常一周休息2-4天。  实用计划： 注意点   练后的一餐很重要
+  保证蛋白质摄入
+  注重营养摄入配比
+ 每天每公斤体重至少进食2g蛋白质，5-7g碳水化合物    热量摄入 &amp;gt; 消耗</description>
+    </item>
+    
+    <item>
+      <title>对Hugo的理解</title>
+      <link>https://cr1315.github.io/posts/hugo_comprehension/</link>
+      <pubDate>Fri, 03 Dec 2021 00:37:05 +0900</pubDate>
+      
+      <guid>https://cr1315.github.io/posts/hugo_comprehension/</guid>
+      <description>hugo页面组成的重要元素 content 首先，自己的内容都要放在content folder底下，content底下的第一层作为type/section使用，一般是一个folder。
+ 这个folder里如果有index.md，则这是一个leaf bundle，也就是一个单一的页面。然后这个folder里可以放各种资源（resource），包括images，pdfs等等都可以，是这个leaf page独有的资源。  leaf bundle里不能再放leaf bundle   如果这个folder里有_index.md，则这是一个branch bundle，简单理解就是存放多个页面的文件夹。  这个folder里可以放leaf bundle，也可以放branch bundle。嘛，扩展了的文件与文件夹的概念。    layout 这个folder里放该怎么渲染页面，根据content的type/section来按照一定的优先级确定一个layout，按照其中的template把content里的markdown渲染成一个html页面。
+这可能是熟悉一些hugo之后第一个customize的东西吧，简单来说，控制了这两个folder的东西，至少就控制了页面的内容和展示这两个部分。至少我就算是在做网页了？
+archetypes layout控制多了就会总结出一些经验，同一个type/section的页面总会有相似的结构，这就叫archetype。在这里定义一些自己用得顺手的archetype算是用熟了hugo之后的第一个进阶吧？
+template hugo用得越来越熟练，开始自定义更细致的东西了。
+不是单纯得去修改一个页面的模版，而是把页面上的内容模块化，就制作一个个小的template，目前还处于第一阶段，臆测是不是可以理解成React里的component呢，算是进阶级了吧。
+config 就目前能看到的东西来讲，这个可能是最深的了吧。
+真正开始配置hugo的运行，理解hugo内部的动作，让hugo按我想的方式运作。配合上述各种元素，真正做到如臂使指。
+嘛，到这个阶段再更新这篇文章吧。那时候应该能看到更多东西。</description>
     </item>
     
     <item>
@@ -343,6 +391,18 @@ No content shown here is rendered, all content is based in the template layouts/
 Setting a very low sitemap priority will tell search engines this is not important content.
 This implementation uses Fusejs, jquery and mark.js
 Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
+    
+    <item>
+      <title>整理</title>
+      <link>https://cr1315.github.io/posts/talk_contents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cr1315.github.io/posts/talk_contents/</guid>
+      <description>オープン/導入 ユーモア 他に 恋愛トーク 弄り 深堀り 他(心を揺さぶる) 価値観形成 頑張っていること 注意すべきこと   相手が答えにくい質問をしない
+  相手の発言を拾って、相手と同じ温度に浸かってないね
+  ぶったぎる
+  </description>
     </item>
     
   </channel>
