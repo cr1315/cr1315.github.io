@@ -1,0 +1,37 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: false
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+#
+# 怎么呈现是一方面，怎么组织data是另一方面
+# yaml是组织data用的，组织data的时候不要太考虑呈现
+#
+skills:
+# 
+# OS: MacOS, Windows, Linux (OpenWRT, Cisco IOS,)
+# Network: Router, Switch, 
+# Language: Java, JavaScript >> Python, PowerShell, VBA, PHP, 
+# DB: PostgreSQL, Db2, IMS >> Mysql, 
+# Backend Framework: Spring >> JSP, Struts, 
+# Front Framework: React, Hugo
+# 
+- name: Kubernetes
+  # logo: "/images/sections/skills/kubernetes.png"
+  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+  url: "https://kubernetes.io/"
+
+- name: Go Development
+  # logo: "/images/sections/skills/go.png"
+  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
+  url: "https://golang.org/"
+
+- name: Cloud Computing
+  # logo: "/images/sections/skills/cloud.png"
+  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+

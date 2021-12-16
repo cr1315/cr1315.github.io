@@ -1,7 +1,7 @@
 baseURL: https://cr1315.github.io
 
 languageCode: en-us
-title: "Ray's Blog"
+title: "一方天地"
 theme: "toha"
 
 publishDir: docs
@@ -19,6 +19,9 @@ markup:
     startLevel: 2
     endLevel: 6
     ordered: false
+  goldmark:
+    renderer:
+      unsafe: true
 
 # Enable global emoji support
 enableEmoji: true
@@ -38,3 +41,10 @@ params:
   # Currently, you can just hide it from the footer.
   newsletter:
     enable: true
+
+  # logo:
+  #   main: images/author/ray.png
+  #   inverted: images/author/ray.png
+  #   favicon: images/author/ray.png
+
+  background: "images/backgrounds/forest.jpg"
