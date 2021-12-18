@@ -26,6 +26,10 @@ markup:
 # Enable global emoji support
 enableEmoji: true
 
+module:
+  imports:
+  - path: github.com/hugo-mods/icons
+
 # Site parameters
 params:
   # GitHub repo URL of your site
