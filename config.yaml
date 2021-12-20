@@ -4,7 +4,7 @@ languageCode: en-us
 title: "一方天地"
 theme: "toha"
 
-publishDir: docs
+# publishDir: docs
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
