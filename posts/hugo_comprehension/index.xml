@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 一方天地</title><link>https://cr1315.github.io/posts/hugo_comprehension/</link><description>Recent content in Posts on 一方天地</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 17 Dec 2021 00:16:00 +0900</lastBuildDate><atom:link href="https://cr1315.github.io/posts/hugo_comprehension/index.xml" rel="self" type="application/rss+xml"/><item><title>blog设计书</title><link>https://cr1315.github.io/posts/hugo_comprehension/blog_design/</link><pubDate>Fri, 17 Dec 2021 00:16:00 +0900</pubDate><guid>https://cr1315.github.io/posts/hugo_comprehension/blog_design/</guid><description> 明天还要出社，好不爽。
+跟着toha整了好多天的blog，渐渐的感觉有些样子了。
+其实还有很多不满意的地方，看着这些地方想着怎么改进，光这么想着感觉就爽到了
+为了预防自己爽过之后就不想继续搞了，先写个设计概要出来。
+主页 填充各种台词，嘛，这只是个时间活儿吧 navbar的缝隙问题，可是是仕样吧，但我不喜欢 想尽办法加各种图，各种icon，参考一下别的网站找找灵感，找找美感 posts sidebar的自动生成问题，想做成material的folder和文件的感觉，然后结构是自动生成的 何谓自动生成，就是反映真实folder结构的navbar，嘛，要靠编程，但这能难到我么？ 文章本身的css需要改进，层叠列表的时候间隔太紧密 -&amp;gt; 缺乏美感！ 文章的meta元素显示，多用icon，文章的createdAt和updatedAt</description></item><item><title>Hugo的极限</title><link>https://cr1315.github.io/posts/hugo_comprehension/the_limitation_of_hugo/</link><pubDate>Thu, 16 Dec 2021 14:46:00 +0900</pubDate><guid>https://cr1315.github.io/posts/hugo_comprehension/the_limitation_of_hugo/</guid><description>怎么说呢，要用Hugo做自己的博客的基础技术，那么最好在一定程度上了解它的极限。
+虽然说一段时间内可能还碰不到那里，可若是现在不做好心理准备，到时候心灰意冷的代价太大。
+今まで也有过不少因为类似的事情而放弃的经历。
+为了将来不轻易放弃，遇到做不到的事情也不放弃，千回百转绕点远路也可以，达成自己想要的效果，在做东西上能更进一步。
+需要现在就做好一定的心理准备，以及给出一个那之后的方向就显得非常重要。
+这或许正是「企画」と「設計」的意义吧，对我来说。
+出来ることなら、やり方はいくらでもある、やり方に囚われずに、目的を見つめられていないと辿り着かないよ。
+逆に、出来ないことなら、事前にある程度明確にしておかないと、やり方にハマってて、結局プロジェクト失敗になります。</description></item></channel></rss>
