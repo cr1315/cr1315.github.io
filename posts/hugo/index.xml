@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 一方天地</title><link>https://cr1315.github.io/posts/hugo/</link><description>Recent content in Posts on 一方天地</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 17 Dec 2021 00:16:00 +0900</lastBuildDate><atom:link href="https://cr1315.github.io/posts/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>blog设计书</title><link>https://cr1315.github.io/posts/hugo/blog_design/</link><pubDate>Fri, 17 Dec 2021 00:16:00 +0900</pubDate><guid>https://cr1315.github.io/posts/hugo/blog_design/</guid><description> 明天还要出社，好不爽。
+跟着toha整了好多天的blog，渐渐的感觉有些样子了。
+其实还有很多不满意的地方，看着这些地方想着怎么改进，光这么想着感觉就爽到了
+为了预防自己爽过之后就不想继续搞了，先写个设计概要出来。
+主页 填充各种台词，嘛，这只是个时间活儿吧 navbar的缝隙问题，可是是仕样吧，但我不喜欢 想尽办法加各种图，各种icon，参考一下别的网站找找灵感，找找美感 posts sidebar的自动生成问题，想做成material的folder和文件的感觉，然后结构是自动生成的 何谓自动生成，就是反映真实folder结构的navbar，嘛，要靠编程，但这能难到我么？ 文章本身的css需要改进，层叠列表的时候间隔太紧密 -&amp;gt; 缺乏美感！ 文章的meta元素显示，多用icon，文章的createdAt和updatedAt 时隔一个月，回头看看 时隔一个月，再看一下自己的blog，怎么说呢，还是挺神奇的
+看一个月前写的日语很神奇的就能看出来语病出现在哪里，可是写的时候就觉得自己写得完全没问题的呢- -
+就连中文的文章也挺，怎么说呢，读起来有舒服的部分，是自己的感想呢，的感觉
+也有不舒服的部分，文章的起承转和というか，内容突然脱线，有一种话不在同一层的感觉，甚至不在相近的几层的感觉。。
+这就是所谓的自己的思维没有经过整理的后果吧，这样子的话听的人，看的人，自然是会云里雾里的啦
+嘛，不过，让我惊讶的是，自己意外的写了好多篇呢
+看来某种程度上，自己是喜欢写下来这些东西的
+虽然各种嫌这格式不好，那结构不好啥的，还是想写下来点东西的
+嘛，毫无内容的当然删了也可以的
+隔了一个月左右再看还能有相似感受的，把文章润色润色吧
+或许这就是写博客吧
+一遍就做成真的是这个世界最大最恶毒的诅咒、、
+过了一个月，还是觉得眼前最需要的是根据src folder来自动生成侧边栏 侧边栏完全反映src的结构 嘛，当然，如果不想的时候，可以修改参数来调整 要说具体的结构该长什么样子，还在发展中 但是以下这些应该有的吧
+有先后之分
+做的一些小玩意儿 -&amp;gt; 名字可以再考虑考虑，「我也能做出东西了！」「热情？兴趣？驱动式开发」什么的？ 自己开发的东西就都整理好放在这里吧，别的地方会用的话就放个链接链过来好了，嗯，这应该是あるべき姿吧 Hugo 生活需要workflow -&amp;gt; 这个名字挺不错哈哈 思维思考 -&amp;gt; 从短乎时代开始，「日记」？「杂感」「牢骚」？ 软派问题集 锻炼自体 -&amp;gt; 更能唬人的名字，「健身日志」 吃吃喝喝 读后感 观后感 -&amp;gt; 动画？电影？ 听后感？</description></item><item><title>Hugo的极限</title><link>https://cr1315.github.io/posts/hugo/the_limitation_of_hugo/</link><pubDate>Thu, 16 Dec 2021 14:46:00 +0900</pubDate><guid>https://cr1315.github.io/posts/hugo/the_limitation_of_hugo/</guid><description>怎么说呢，要用Hugo做自己的博客的基础技术，那么最好在一定程度上了解它的极限。
+虽然说一段时间内可能还碰不到那里，可若是现在不做好心理准备，到时候心灰意冷的代价太大。
+今まで也有过不少因为类似的事情而放弃的经历。
+为了将来不轻易放弃，遇到做不到的事情也不放弃，千回百转绕点远路也可以，达成自己想要的效果，在做东西上能更进一步。
+需要现在就做好一定的心理准备，以及给出一个那之后的方向就显得非常重要。
+这或许正是「企画」と「設計」的意义吧，对我来说。
+出来ることなら、やり方はいくらでもある、やり方に囚われずに、目的を見つめられていないと辿り着かないよ。
+逆に、出来ないことなら、事前にある程度明確にしておかないと、やり方にハマってて、結局プロジェクト失敗になります。</description></item></channel></rss>
