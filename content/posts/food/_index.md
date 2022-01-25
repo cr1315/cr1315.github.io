@@ -2,8 +2,8 @@
 title: Posts
 menu:
   sidebar:
-    name: 读后感
-    identifier: impression
+    name: 美食
+    identifier: food
     weight: 30
 ---  
 

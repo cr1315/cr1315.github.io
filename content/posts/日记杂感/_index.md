@@ -2,8 +2,8 @@
 title: Posts
 menu:
   sidebar:
-    name: 读后感
-    identifier: impression
+    name: 日记杂感
+    identifier: diary
     weight: 30
 ---  
 
