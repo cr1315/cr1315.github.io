@@ -2,7 +2,7 @@
 title: Posts
 menu:
   sidebar:
-    name: Hugo-comprehension
+    name: Hugo
     identifier: hugo-comprehension
     weight: 10
 ---  

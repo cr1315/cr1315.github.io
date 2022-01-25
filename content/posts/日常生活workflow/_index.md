@@ -2,7 +2,7 @@
 title: Workflows
 menu:
   sidebar:
-    name: Workflows
+    name: 日常生活workflow
     identifier: workflows
     weight: 15
 ---  

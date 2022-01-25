@@ -2,8 +2,8 @@
 title: Posts
 menu:
   sidebar:
-    name: 美食
+    name: 吃吃喝喝
     identifier: food
-    weight: 30
+    weight: 90
 ---  
 

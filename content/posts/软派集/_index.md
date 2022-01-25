@@ -2,7 +2,7 @@
 title: "nanpa"
 menu:
   sidebar:
-    name: Nanpa
+    name: 软派集
     identifier: nanpa
     weight: 30
 ---
