@@ -99,10 +99,15 @@ guide作ってるじゃん、それはそうだけど、頑張ってやってま
     - ISPF, JCL, PL/1
     - 古いですし、何なんのって思うよね、まぁ、でもなんだろう、こんな日々変わってる世界に、今でもテープとかが使われてるなんて思ったら、なんとなく落ち着いてくるんじゃない、色々勉強出来ましたと思います
         - 激変の中の不変なもの的な
+        - おじいちゃんが意地悪な質問するせいで、色々調べたりして勉強になった
 - 修正程度が多いから、深く行けないのが嫌で、家で自分で環境作って、
     - 自分でLinux 1.0
+    - bootloader, calling convention
+    - virtual memory management, context switch(process switch), 
+    - stack trace
 
 - 最初はServlet, JSP, Struts
+
 - Spring / React + Webpack
     - Jenkins, Ansible, Docker, React, PostgreSql
 
